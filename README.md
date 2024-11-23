@@ -33,7 +33,7 @@ A modern, responsive Role-Based Access Control (RBAC) system for managing notes 
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Akash-Jambulkar/RBAC-Note-System
+git clone https://github.com/Akash-Jambulkar/rbac-notes-system
 cd rbac-notes-system
 ```
 
