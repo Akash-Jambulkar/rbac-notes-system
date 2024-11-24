@@ -1,129 +1,173 @@
+# RBAC Notes System : https://rbac-notes-system.netlify.app/
 
+A modern, secure Role-Based Access Control (RBAC) system for managing notes with granular permissions and a beautiful UI.
 
-# RBAC Notes System
+![RBAC Notes System](https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&h=400&fit=crop)
 
-A modern **Role-Based Access Control (RBAC)** system for managing notes with distinct user roles, permissions, and a sleek design.
+## 🚀 Quick Start
 
-![RBAC Notes System](https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=1200&h=400&fit=crop)
+```bash
+# Install dependencies
+npm install
 
----
+# Start development server
+npm run dev
 
-## Features
+# Build for production
+npm run build
+```
+
+## 🔑 Default Credentials
+
+```
+Admin User:
+  Username: admin
+  Password: admin123
+```
+
+## ✨ Key Features
 
 ### 🔐 Role-Based Access Control
-- Admin and User roles with customized permissions.
-- Granular control over operations: Create, Read, Update, Delete (CRUD).
-- Simple role assignment and user management for flexibility.
+- **Granular Permissions**: Fine-grained control over note operations
+- **Custom Roles**: Create and manage custom roles with specific permissions
+- **User Management**: Comprehensive user administration system
+- **Access Levels**: Different access levels for admins and regular users
 
 ### 📝 Note Management
-- Create, read, update, and delete notes with ease.
-- Rich text editor for seamless note creation.
-- Quick search and filters for better navigation.
-- Fully responsive interface for desktop and mobile.
+- **Rich Text Editor**: Full-featured note creation and editing
+- **Real-time Search**: Instant note filtering and search
+- **Categories**: Organize notes with tags and categories
+- **Responsive Design**: Seamless experience across all devices
 
-### 👥 User Management
-- User registration and secure authentication.
-- Role assignment and control for efficient management.
-- Account status management (active/inactive users).
-- Secure and encrypted password handling.
+### 👥 User Features
+- **User Profiles**: Customizable user profiles
+- **Activity Tracking**: Monitor user actions and changes
+- **Status Management**: Control user account status
+- **Secure Authentication**: Robust login and registration system
 
 ### 🎨 Modern UI/UX
-- Clean and intuitive interface.
-- Responsive layout optimized for all devices.
-- Modern gradients, animations, and styling.
-- Dark mode support for user comfort.
+- **Tailwind Design**: Beautiful, responsive interface
+- **Dark Mode**: Toggle between light and dark themes
+- **Animations**: Smooth transitions and micro-interactions
+- **Toast Notifications**: Elegant status updates
 
----
+## 🛠️ Tech Stack
 
-## Tech Stack
+- **Frontend**
+  - React 18.3.1 (Latest)
+  - TypeScript
+  - Tailwind CSS
+  - Lucide Icons
 
-- ⚛️ **React** - UI Library for interactive components.
-- 🎨 **Tailwind CSS** - Modern styling framework.
-- 🔄 **React Router** - Seamless routing.
-- 🔔 **React Hot Toast** - Notifications for user feedback.
-- 📦 **LocalStorage** - Persistent local data handling.
-- 🎯 **TypeScript** - Type safety for a robust codebase.
-- ⚡ **Vite** - Fast and optimized build tool.
+- **State Management**
+  - React Context API
+  - Local Storage
+  - Custom Hooks
 
----
+- **Security**
+  - RBAC Implementation
+  - Protected Routes
+  - Session Management
 
-## Installation
+- **Development**
+  - Vite
+  - ESLint
+  - React Router
+  - React Hot Toast
 
-1. **Clone the repository**:
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Navbar.tsx      # Navigation component
+│   └── ProtectedRoute.tsx
+├── contexts/           # React contexts
+│   └── AuthContext.tsx
+├── pages/              # Page components
+│   ├── Login.tsx
+│   ├── Notes.tsx
+│   ├── Users.tsx
+│   └── Roles.tsx
+├── types/              # TypeScript types
+│   └── index.ts
+└── utils/              # Utility functions
+    └── initialData.ts
+```
+
+## 🔒 Security Features
+
+- **Role-Based Access**
+  - Admin role with full system access
+  - User role with limited permissions
+  - Custom role creation
+  - Permission management
+
+- **Protected Routes**
+  - Route-level access control
+  - Role-based route protection
+  - Unauthorized access prevention
+
+- **Data Security**
+  - Secure password handling
+  - Session management
+  - Access token validation
+
+## 🎯 User Roles & Permissions
+
+| Role  | Create | Read | Update | Delete |
+|-------|--------|------|--------|---------|
+| Admin | ✅     | ✅   | ✅     | ✅      |
+| User  | ✅     | ✅   | ❌     | ❌      |
+
+## 🚀 Getting Started
+
+1. **Clone & Install**
    ```bash
-   git clone https://github.com/Akash-Jambulkar/rbac-notes-system.git
+   git clone https://github.com/yourusername/rbac-notes-system
    cd rbac-notes-system
-   ```
-
-2. **Install dependencies**:
-   ```bash
    npm install
    ```
 
-3. **Start the development server**:
+2. **Start Development**
    ```bash
    npm run dev
    ```
 
-4. **Access the app**:  
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## Default Admin Credentials
-
-- **Username**: `admin`  
-- **Password**: `admin123`  
-
-Use these to log in and explore the admin features.
-
----
-
-## Available Scripts
-
-- **`npm run dev`**: Start the development server.
-- **`npm run build`**: Build the app for production.
-- **`npm run preview`**: Preview the production build.
-- **`npm run lint`**: Run ESLint for code quality checks.
-
----
-
-## Live Demo
-
-Experience the app live at:  
-**[RBAC Notes System](https://rbac-notes-system.netlify.app/)**
-
----
-
-## Contributing
-
-We welcome contributions! Follow these steps to get started:
-
-1. Fork the repository.
-2. Create a feature branch:  
+3. **Build for Production**
    ```bash
-   git checkout -b feature/amazing-feature
+   npm run build
    ```
-3. Commit your changes:  
-   ```bash
-   git commit -m "Add amazing feature"
-   ```
-4. Push to the branch:  
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. Open a Pull Request.
 
----
+## 📱 Features by Role
 
-## License
+### 👑 Admin Features
+- User management
+- Role creation and management
+- System-wide note management
+- Permission configuration
+- User activity monitoring
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+### 👤 User Features
+- Note creation and viewing
+- Profile management
+- Personal note organization
+- Search functionality
 
----
+## 🤝 Contributing
 
-## Acknowledgments
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- **Icons** by [Lucide Icons](https://lucide.dev/).
-- **UI Inspiration** from leading modern web apps.
-- Built with ❤️ using **React** and **TypeScript**.
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Icons by [Lucide Icons](https://lucide.dev)
+- UI inspiration from modern web applications
+- Built with ❤️ using React and TypeScript
