@@ -124,7 +124,7 @@ src/
 
 1. **Clone & Install**
    ```bash
-   git clone https://github.com/yourusername/rbac-notes-system
+   git clone https://github.com/Akash-Jambulkar/rbac-notes-system
    cd rbac-notes-system
    npm install
    ```
